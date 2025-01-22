@@ -29,7 +29,7 @@ Before setting up the project, make sure you have the following installed:
 ### 1. Clone the Repository
 - Clone the repository to your local machine:
   ```bash
-  git clone https://github.com/bohdev95/Next.js-Nooro
+  git clone https://github.com/bohdev95/Next.js-app
 
 ### 2. Navigate into the project directory
 - cd Next.js-app
