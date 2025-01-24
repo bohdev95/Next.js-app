@@ -52,12 +52,12 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto w-1/2 sm:px-8 py-3">
+    <div className="container mx-auto w-1/2 sm:px-8 py-3 relative mt-[-2.5rem]">
   {loading ? (
     <div className="text-center text-xl">Loading tasks...</div>
   ) : (
     <>
-    <Link href="/tasks/create">
+      <Link href="/tasks/create">
         <button className="mb-4 w-full flex items-center justify-center py-4 font-bold bg-[#1E6F9F] text-white rounded-lg">
           <span className='mx-2'>Create Task</span> 
           <Image src={"/images/Layer 2.svg"} width={15.97} height={15.97}  alt="task icon" />

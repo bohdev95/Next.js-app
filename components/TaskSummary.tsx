@@ -9,7 +9,7 @@ const TaskSummary: React.FC<TaskSummaryProps> = ({ tasks }) => {
   const completedTasks = tasks.filter(task => task.completed).length;
 
   return (
-    <div className="mb-4 flex flex-col sm:flex-row items-center justify-between text-lg sm:text-xl">
+    <div className="mb-4 mt-12 flex flex-col sm:flex-row items-center justify-between text-lg sm:text-xl">
       <div className="flex items-center space-x-2">
         <p className="text-sm font-bold text-[#4EA8DE]">Tasks:</p>
         <span className="bg-[#333333] text-white rounded-full px-3 py-1 text-sm">{totalTasks}</span>

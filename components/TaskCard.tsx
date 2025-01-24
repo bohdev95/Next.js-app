@@ -27,11 +27,11 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onToggleCompleted, onDelete }
           checked={task.completed}
           onChange={() => onToggleCompleted(task.id, task.completed)}
           id={`checkbox-${task.id}`}
-          className="rounded-full border-2 border-gray-500 w-6 h-6 bg-white"
+          className="appearance-none rounded-full border-2 border-gray-500 w-6 h-6 bg-white checked:bg-blue-500 checked:border-blue-500 checked:before:content-['✔'] checked:before:text-white checked:before:text-center checked:before:flex checked:before:justify-center"
         />
 
         <span
-          className={`cursor-pointer mx-3 ${task.completed ? 'line-through text-[#808080]' : ''}`}
+          className={`cursor-pointer mx-3 ${task.completed ? 'line-through text-[#808080]' : 'text-[#f1f1f1]'}`}
           onClick={handleTitleClick}
         >
           {task.title}
